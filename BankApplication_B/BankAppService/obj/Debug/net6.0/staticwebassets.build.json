@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kiQLpDCMIgLx1aY1rYdvykfuAdqddWprOEr7fFEon3s=",
+  "Source": "BankAppService",
+  "BasePath": "_content/BankAppService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

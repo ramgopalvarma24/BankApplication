@@ -1,0 +1,36 @@
+<div>
+    <h2>Account List</h2>
+    <a routerLink="/accounts/create">Create New Account</a>
+    <ul>
+      <li *ngFor="let account of accounts">
+        {{account.accountNumber}} - {{account.accountName}} - {{account.balance}}
+        
+       
+      </li>
+    </ul>
+  </div>
+  <table class="w-full border-collapse table table-hover ">
+    <thead>
+      <tr class="bg-gray-100 ">
+        <th class="p-2 text-left">Account Number</th>
+        <th class="p-2 text-left">Account Name</th>
+        <th class="p-2 text-left">Balance</th>
+        <th class="p-2 text-left">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let acc of accounts" class="border-b ">
+        <td class="p-2">{{acc.accountNumber}}</td>
+        <td class="p-2">{{acc.accountName}}</td>
+        <td class="p-2">{{acc.balance}}</td>
+        <td class="p-2">
+          <button (click)="onEdit(acc)" class="mr-2 text-blue-600 btn-primary btn">
+            Edit
+          </button>
+          <button (click)="onDelete(acc)" class="text-red-600 btn" >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
