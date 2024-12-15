@@ -1,13 +1,7 @@
 <div>
     <h2>Account List</h2>
-    <a routerLink="/accounts/create">Create New Account</a>
-    <ul>
-      <li *ngFor="let account of accounts">
-        {{account.accountNumber}} - {{account.accountName}} - {{account.balance}}
-        
-       
-      </li>
-    </ul>
+    <a href="/create">Create New Account</a>
+
   </div>
   <table class="w-full border-collapse table table-hover ">
     <thead>
@@ -24,6 +18,7 @@
         <td class="p-2">{{acc.accountName}}</td>
         <td class="p-2">{{acc.balance}}</td>
         <td class="p-2">
+          <!-- <a href="/edit/{{acc.accountNumber}}"> Edit</a> -->
           <button (click)="onEdit(acc)" class="mr-2 text-blue-600 btn-primary btn">
             Edit
           </button>

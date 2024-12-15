@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZhfRRK76a7Xt6GhnE0OepAtFBCuEGus2ctGM0eQGxgjb5lz0sb6WAmS1GBqLJgHHTjHNzxgznesmArxb19xLRg==",
+  "dgSpecHash": "f0bXp6gF75Mi5cskQqnsT58xG+doxXLdeKA4lhPPrKNMC+JViZhPuyzbRXJyUYFGQl1QgC4io0qaNhLYG1uRGg==",
   "success": true,
-  "projectFilePath": "D:\\FullStack_Projects\\Visual_studio_BackEnd\\BankApplication_B\\BankApp_DAL\\BankApp_DAL.csproj",
+  "projectFilePath": "D:\\FullStack_Projects\\Angular_Projects\\BankApplication\\BankApplication_B\\BankApp_DAL\\BankApp_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

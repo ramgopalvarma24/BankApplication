@@ -1,1 +1,31 @@
-<p>all-transactions works!</p>
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+<h2>All Transactions</h2>
+<table *ngIf="transactions.length > 0" class="table">
+  <thead>
+    <tr>
+      <th>From Account</th>
+      <th>To Account</th>
+      <th>Amount Debited</th>
+      <th>From Account Balance</th>
+      <th>To Account Balance</th>
+      <th>Transaction Time</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.fromAccount }}</td>
+      <td>{{ transaction.toAccount }}</td>
+      <td>{{ transaction.amountDebited | currency }}</td>
+      <td>{{ transaction.fromAccountBalance | currency }}</td>
+      <td>{{ transaction.toAccountBalance | currency }}</td>
+      <td>{{ transaction.transactionTime | date }}</td>
+      <td href="">Details</td>
+
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="transactions.length === 0">No transactions found.</div>

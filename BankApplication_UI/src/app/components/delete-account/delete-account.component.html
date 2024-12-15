@@ -1,1 +1,13 @@
 <p>delete-account works!</p>
+<h2>Delete</h2>
+<h4>Are you sure you want to dlete this ?</h4>
+
+<h4>Account</h4>
+<label>Account Name : {{ accountData?.accountName }}</label>
+<br>
+<label>Balance : {{ accountData?.balance }}</label>
+<br>
+
+<button class="btn btn-primary" (click)="DeleteAccount()">Delete</button>
+
+<a href="/allaccounts">Back to List</a>

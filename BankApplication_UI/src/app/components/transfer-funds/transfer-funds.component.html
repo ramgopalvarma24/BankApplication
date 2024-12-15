@@ -1,1 +1,42 @@
-<p>transfer-funds works!</p>
+<div class="transfer-form">
+    <h3>Transfer Funds</h3>
+    <form (ngSubmit)="transferFunds()">
+      <!-- From Account -->
+      <div class="form-group">
+        <label for="account">From Account:</label>
+        <select id="account" name="account" [(ngModel)]="transferData.fromAccount" required>
+          <option *ngFor="let account of accountslist" [value]="account.accountNumber">
+            {{ account.accountName }}
+          </option>
+        </select>
+      </div>
+  
+      <!-- To Account -->
+      <div class="form-group">
+        <label for="toAccount">To Account:</label>
+        <select id="toAccount" name="toAccount" [(ngModel)]="transferData.toAccount" required>
+          <option *ngFor="let account of accountslist" [value]="account.accountNumber">
+            {{ account.accountName }}
+          </option>
+        </select>
+      </div>
+  
+      <!-- Amount -->
+      <div class="form-group">
+        <label for="amount">Amount to Transfer:</label>
+        <input
+          id="amount"
+          type="number"
+          name="amount"
+          [(ngModel)]="transferData.amount"
+          required
+          min="1"
+          placeholder="Enter amount"
+        />
+      </div>
+  
+      <!-- Transfer Button -->
+      <button type="submit" class="btn btn-primary">Transfer</button>
+    </form>
+  </div>
+  

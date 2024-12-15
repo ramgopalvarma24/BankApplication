@@ -1,1 +1,25 @@
-<p>create-account works!</p>
+<div class="container">
+  <div class="row mb-3">
+    <label for="accountName" class="form-label"> Account Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="accountName"
+      [(ngModel)]="accountName"
+    />
+  </div>
+  <div class="row mb-3">
+    <label for="balance" class="form-label"> Balance</label>
+    <input
+      type="text"
+      class="form-control"
+      id="balance"
+      [(ngModel)]="balance"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+    Submit
+  </button>
+  <br />
+  <a href="/allaccounts">Back to List</a>
+</div>

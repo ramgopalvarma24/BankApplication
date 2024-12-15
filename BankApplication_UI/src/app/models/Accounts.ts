@@ -1,6 +1,5 @@
 export interface Account {
-    accountNumber: number;
-    accountName: string;
-    balance: number;
-  }
-  
+  accountNumber?: number | undefined;
+  accountName: string | null;
+  balance: number | null;
+}

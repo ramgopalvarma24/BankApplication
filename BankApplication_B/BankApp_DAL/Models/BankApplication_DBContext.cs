@@ -33,9 +33,11 @@ namespace BankApp_DAL.Models
             modelBuilder.Entity<Account>(entity =>
             {
                 entity.HasKey(e => e.AccountNumber)
-                    .HasName("PK__Accounts__BE2ACD6E4D9614D5");
+                    .HasName("pk_accountNumber");
 
-                entity.Property(e => e.AccountNumber).ValueGeneratedNever();
+                //entity.Property(e => e.AccountNumber).ValueGeneratedNever();
+                entity.Property(e => e.AccountNumber).ValueGeneratedOnAdd();
+
 
                 entity.Property(e => e.AccountName).HasMaxLength(100);
 
@@ -44,7 +46,10 @@ namespace BankApp_DAL.Models
 
             modelBuilder.Entity<Transaction>(entity =>
             {
-                entity.HasNoKey();
+                //entity.HasNoKey();
+              
+                entity.HasKey(e => e.Id);  // Explicitly setting primary key
+
 
                 entity.Property(e => e.AmountDebited)
                     .HasColumnType("decimal(10, 2)")

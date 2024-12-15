@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cAEcmDnzTRcKURmvMLn8q2qapOqByYmqBrsfDfAObQ2aJg1fH/0/4nX1dLMVg+dVYXkKqEqYGLTIPlhJ8kdAwg==",
+  "dgSpecHash": "T1zlIxm56i/4N3rchirjVCwQWpj5wp0sRTWhTGCHWAXuPWEugt/DlreROOohkP8iiJLgzZAZhd45PWlSK23KuQ==",
   "success": true,
-  "projectFilePath": "D:\\FullStack_Projects\\Visual_studio_BackEnd\\BankApplication_B\\BankAppService\\BankAppService.csproj",
+  "projectFilePath": "D:\\FullStack_Projects\\Angular_Projects\\BankApplication\\BankApplication_B\\BankAppService\\BankAppService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
